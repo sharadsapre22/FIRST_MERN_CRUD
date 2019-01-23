@@ -68,6 +68,11 @@ import React, { Component } from 'react';
         return (
         <div className="container">
             <form style={customStyle} onSubmit={this.handleSubmit}>
+                <br/>
+                <h3> Edit Employee Details </h3>
+                <br/>
+                <br/>
+
                 <label> First Name
                     <input name="firstName" type="text" value={this.state.firstName}
                     onChange={this.handleChange} className="form-control" />

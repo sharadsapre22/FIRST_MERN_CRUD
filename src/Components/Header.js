@@ -13,15 +13,9 @@ class Header extends Component {
                         <li className="nav-item active">
                             <a className="nav-link" href="/">Home</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/addEmp">Add new employee</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">New 1</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled" href="/">Disabled</a>
-                        </li>
+                        {/* <li className="nav-item">
+                            <a className="nav-link" href="/addEmp">Add new</a>
+                        </li> */}
                     </ul>
                 </nav>
                 

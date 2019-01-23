@@ -46,6 +46,11 @@ class AddEmployee extends Component {
         return (
             <div className='container'>
                 <form style={custStyle} onSubmit={this.handleSubmit}>
+                    <br/>
+                    <h3> Add new Employee </h3>
+                    <br/>
+                    <br/>
+
                     <label>First Name
                         <input name='firstName' type='text' value={this.state.firstName}
                         onChange={this.handleChange} className="form-control"></input>

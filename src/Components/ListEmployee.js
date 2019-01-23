@@ -9,6 +9,10 @@ var divStyle = {
     margin: '8% 8%'
 };
 
+const btnStyle = {   
+    'text-align': 'right'
+};
+
 class ListEmployee extends Component {
     constructor(props){
         super(props);
@@ -46,7 +50,13 @@ class ListEmployee extends Component {
         const { employees } = this.state;
         return (
         <div style={divStyle}>
-            <Table responsive>
+            <div style={btnStyle}>
+                <Link to={"/addEmp" } className="right btn btn-primary">Add new Employee</Link>
+                <br/ >
+            </div>
+            <br/ >
+            <div>
+                <Table responsive>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -63,7 +73,7 @@ class ListEmployee extends Component {
                         employees && employees.map((employee, i) => {
                         return (
                         <tr key={i}>
-                            <td>{i}</td>
+                            <td>{i+1}</td>
                             <td>{employee.firstName}</td>
                             <td>{employee.lastName}</td>
                             <td>{employee.email}</td>
@@ -80,6 +90,7 @@ class ListEmployee extends Component {
                     }
                 </tbody>
             </Table>
+            </div>
         </div>
         );
     } 
